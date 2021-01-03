@@ -1,0 +1,21 @@
+.Questions__container_items{
+    /* background-color: #7bba8c; */
+    /* color: #075353; */
+    margin: 10px;
+}
+.Questions__container_items > h1{
+    background-color: var(--dark-green);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    
+}
+.Questions__container_items > p{
+    background-color: #7bba8c;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    font-weight: 600;
+}

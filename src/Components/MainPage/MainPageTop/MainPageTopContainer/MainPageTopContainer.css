@@ -1,0 +1,33 @@
+.MainPageTop__data_container{
+    /* border: 2px solid black; */
+    margin: 40px 0;
+    width: 90%;
+    display: flex;
+}
+.MainPageTop__data_container_right{
+    margin-left: 20px;
+}
+.MainPageTop__data_container_right h3{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.6rem;
+}
+.MainPageTop__data_container_right p{
+    font-size: 1.14rem;
+    letter-spacing: 1.2px;
+    line-height: 24px;
+    margin: 0;
+}
+@media screen and (max-width: 650px) {
+    
+    .MainPageTop__data_container_right h3{
+        font-size: 1.35rem;
+    }
+    .MainPageTop__data_container_right p{
+        font-size:0.9rem;
+    }
+  }
+  

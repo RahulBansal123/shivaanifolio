@@ -1,0 +1,146 @@
+.Contact {
+  width: 100%;
+  margin-top: 100px;
+  height: 87vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 80px;
+}
+.Contact__left {
+  width: 50%;
+  /* border: 2px solid red; */
+}
+.Contact__left > h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.Contact__left > p {
+  font-size: 1.1rem;
+  width: 70%;
+  font-weight: 350;
+}
+.Contact__icon {
+  width: 500px;
+  height: 450px;
+}
+.Contact__right {
+  width: 50%;
+  height: 100%;
+  /* border: 2px solid red; */
+  position: relative;
+}
+.Contact__above {
+  width: 100%;
+  max-width: 580px;
+  margin: 15px auto 0 auto;
+  height: fit-content;
+  padding: 10px 0;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: -2px -1px 20px -2px #ccc;
+  border-radius: 15px;
+}
+.Contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  margin: 40px auto;
+}
+.Contact__form_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+.Contact__form_row_data {
+  flex: 1;
+  padding: 5px 10px;
+}
+.Contact__form_row input,
+.Contact__form_row textarea {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 30px;
+  margin: 5px 0;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 18px 10px;
+  outline: 0;
+}
+.Contact__form_row input:hover,
+.Contact__form_row input:focus,
+.Contact__form_row textarea:focus,
+.Contact__form_row textarea:hover {
+  border: 2px solid var(--dark-green);
+}
+.Contact__form_row textarea {
+  height: 150px;
+  resize: none;
+}
+.Contact__form_submit {
+  background-color: var(--dark-green);
+  width: 95%;
+  margin: auto;
+  padding: 12px 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+.Contact__form_row_data > p {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .Contact {
+    padding: 0;
+    overflow: auto;
+  }
+  .Contact__left {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .Contact__left > h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .Contact__left > p {
+    margin: 20px auto 40px auto;
+    text-align: center;
+    width: 95%;
+  }
+  .Contact__left object {
+    display: none;
+  }
+  .Contact__right {
+    width: 100%;
+  }
+  .Contact__above {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: fit-content;
+  }
+  .Contact__form {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media (min-width: 731px) and (max-width: 1100px) {
+  
+  .Contact__left > p {
+    width: 70%;
+  }
+}@media (max-width: 730px) {
+  .Contact__left >h1{
+    font-size: 2rem;
+  }
+  
+}

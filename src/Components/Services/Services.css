@@ -1,0 +1,26 @@
+.Services {
+  background-color: var(--background);
+  font-family: Helvetica, Arial, sans-serif;
+}
+.Services__container {
+  width: 88%;
+  margin: auto;
+  padding: 100px 0;
+  padding-top: 50px;
+}
+.Services__container > h1{
+  font-size: 45px;
+  font-weight: 800;
+  padding: 20px;
+}
+.Services__container_box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 730px) {
+  .Services__container {
+    width: 100%;
+  }
+}

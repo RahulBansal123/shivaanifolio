@@ -1,0 +1,21 @@
+.Questions {
+  width: 100%;
+  background-color: var(--dark-green);
+  background-color: var(--background);
+}
+.Questions__container {
+  width: 88%;
+  margin: auto;
+  padding: 70px;
+}
+.Questions__container > h1 {
+  text-align: center;
+  width: 88%;
+  margin: auto;
+  color: var(--black);
+  font-size: 50px;
+}
+.Questions_container_box{
+width: 80%;
+margin: 50px auto;
+}

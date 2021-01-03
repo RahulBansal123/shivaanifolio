@@ -1,0 +1,23 @@
+.App {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+}
+.icons{
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: hsla(0, 0%, 100%, 0.618);
+  box-shadow: 0 3px 2px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 0 0 10px;
+}
+.icons a{
+  margin: 10px auto;
+}
+@media (max-width: 730px) {
+.icons{display: none;}
+}

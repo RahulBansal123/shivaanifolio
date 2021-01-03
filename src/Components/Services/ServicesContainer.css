@@ -1,0 +1,53 @@
+.ServicesContainer_odd,
+.ServicesContainer_even {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 350px;
+    margin: 20px 0px; 
+    width: 33%;
+  border-radius: 10px;
+  padding: 20px 30px ;
+  line-height: 2rem;
+  box-shadow: 0 1.2px 3.6px rgba(0, 0, 0, 0.1),
+    0 6.4px 14.4px rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+
+.ServicesContainer_odd {
+  background: #7bba8c;
+  color: #05343a;
+}
+.ServicesContainer_even {
+  background: var(--dark-green);
+  color: #fff;
+}
+.ServicesContainer_odd > img,
+.ServicesContainer_even > img {
+  min-width: 250px;
+  height: 250px;
+  margin: 40px 0;
+  border-radius: 20px;
+}
+.ServicesContainer_odd > h3,
+.ServicesContainer_even > h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 22px;
+}
+.ServicesContainer_odd > p,
+.ServicesContainer_even > p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+}
+@media screen and (max-width: 800px) {
+  .ServicesContainer_odd ,
+.ServicesContainer_even  {
+    width: 100%;
+    margin: 20px; 
+
+  }
+}

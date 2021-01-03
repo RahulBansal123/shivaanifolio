@@ -1,0 +1,39 @@
+.BlogContentBottom{
+    width: 100%;
+    height:240px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.BlogContentBottom_left{
+    width: 55%;
+    cursor: pointer;
+    margin-left: 50px ;
+}
+.BlogContentBottom_right{
+    width: 40%;
+    cursor: pointer;
+    height: 100%;
+}
+.BlogContentBottom_right > img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+@media screen and (max-width: 730px) {
+    .BlogContentBottom{
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+    }
+    .BlogContentBottom_right{
+        width: 100%;
+        height: 200px;
+    }
+    .BlogContentBottom_left{
+        width: 100%;
+        margin:  0 ;
+        padding: 20px 0 0;
+    }
+  }
+  

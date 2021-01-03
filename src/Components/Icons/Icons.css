@@ -1,0 +1,17 @@
+.Footer__icons {
+    margin: 0 15px;
+pointer-events: none;   
+ width: 42px;
+    height: 42px;
+    outline: none;
+  }
+  .Footer__icons svg{
+    cursor: pointer;
+  }
+  .Footer__icons_link{
+    cursor: pointer;
+outline: none; 
+ }
+.Footer__icons_link:hover{
+  transform: scale(1.2);
+}
