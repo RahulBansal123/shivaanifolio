@@ -1,4 +1,4 @@
-# ShivaaniFolio - An enterprise level, SEO optimized MERN Stack blog website
+# ShivaaniFolio - A MERN Stack blog website
 
 ## Demo
 <img src="https://github.com/RahulBansal123/shivaanifolio/blob/main/shivaanifolio.gif"/>
