@@ -1,13 +1,25 @@
-import React from "react";
-import "./Footer.css";
+import React from 'react';
+import './Footer.css';
 import Icons from '../Icons/Icons';
-
 const Footer = () => {
   return (
     <div className="Footer">
-      <div className="Footer__left">Copyright &#169; 2020 | ShivaaniFolio</div>
+      <div className="Footer__left">Copyright &#169; 2021 | ShivaaniFolio</div>
       <div className="Footer__middle">
-        Privacy Policy | Terms and Conditions
+        <span
+          onClick={() =>
+            (window.location.href = 'https://www.shivaanibansal.in/privacy')
+          }
+        >
+          Privacy Policy
+        </span>{' '}
+        <span
+          onClick={() =>
+            (window.location.href = 'https://www.shivaanibansal.in/terms')
+          }
+        >
+          | Terms and Conditions
+        </span>
       </div>
       <div className="Footer__right">
         <Icons />

@@ -27,7 +27,8 @@
 .Blogs__Trending_top_one > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  /* border: 2px solid red; */
   border-radius: 5px;
   cursor: pointer;
 }

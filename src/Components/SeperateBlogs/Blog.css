@@ -42,9 +42,9 @@
   width: 100%;
   max-height: 650px;
   border-radius: 8px;
+  margin: 20px 0;
 }
 .Blog_content h2 h3  {
-  margin-top: 1.72em;
   font-family: sohne, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   overflow-wrap: break-word;
@@ -52,11 +52,13 @@
   color: rgb(34, 34, 34);
 }
 .Blog_content h2  {
+  margin: 100px 0 40px 0;
   line-height: 35px;
   font-size: 30px;
 }
 .Blog_content h3 {
-  line-height: 28px;
+  margin: 70px 0 40px 0;
+  line-height: 36px;
   font-size: 24px;
 }
 .Blog_content p {
@@ -75,7 +77,7 @@
   margin-top: 1.5em;
 }
 .Blog_content ul li, .Blog_content ol li  {
-  margin-top: 0.5em;
+  margin-top: 10px;
 }
 .Blog_content_reaction_container {
   width: 120px;

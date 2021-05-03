@@ -51,20 +51,28 @@ const MainPage = () => {
             </div>
           </div>
           <div className="MainPage__top_left_button">
-            <button>Consultaion</button>
-            <button>Services</button>
+            <button
+              onClick={() => {
+                window.location.href =
+                  'https://tagmango.com/creator/shivaani-bansal';
+              }}
+            >
+              Consultaion
+            </button>
+            <button
+              onClick={() => {
+                window.location.href =
+                  'https://www.facebook.com/shivaanibansal/services/?ref=page_internal';
+              }}
+            >
+              Services
+            </button>
           </div>
         </div>
         <div className="MainPage__top_right">
-          <div className="MainPage__top_right_container">
-            {/* <h3>Paid Marketing</h3> */}
-          </div>
-          <div className="MainPage__top_right_container">
-            {/* <h3>Paid Marketing</h3> */}
-          </div>
-          <div className="MainPage__top_right_container">
-            {/* <h3>Paid Marketing</h3> */}
-          </div>
+          <div className="MainPage__top_right_container"></div>
+          <div className="MainPage__top_right_container"></div>
+          <div className="MainPage__top_right_container"></div>
         </div>
       </div>
       <div className="MainPage__top_shape_container">

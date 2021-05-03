@@ -19,8 +19,9 @@ const BlogContent = ({ id, type, head, content, date }) => {
             data={time}
             className="BlogContent_bottom_svg"
           >
-            Upgrade Your browser to see this.
+            Upgrade browser
           </object>
+          <span className="BlogContent_bottom_svg_time">{date}</span>
           {/* {date ? date.replaceAll('/', '-') : null} */}
         </div>
         {/* <div className="BlogContent_bottom_data">

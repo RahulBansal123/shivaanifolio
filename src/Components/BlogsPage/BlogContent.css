@@ -40,6 +40,13 @@
   margin: 5px;
   margin-left: 0;
 }
+.BlogContent_bottom_svg_time{
+  color: rgb(103, 118, 124);
+  font-family: Georgia, serif;
+  font-size: 16px;
+  margin-left: 6px;
+  font-weight: 400;
+}
 .BlogContent_bottom_data {
   display: flex;
   align-items: center;

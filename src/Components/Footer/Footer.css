@@ -11,6 +11,9 @@
 .Footer__middle {
   flex: 1;
 }
+.Footer__middle span{
+  cursor: pointer;
+}
 /* .Footer__right a{
   margin: 10px;
   height: 100px;

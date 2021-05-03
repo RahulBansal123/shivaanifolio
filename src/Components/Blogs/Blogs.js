@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Blogs.css';
 
 import Blog from './Blog';
+import Spinner from '../Spinner/Spinner';
 
 const Blogs = () => {
   const [data, setData] = useState(null);
@@ -18,19 +19,21 @@ const Blogs = () => {
     <div className="Blogs">
       <div className="Blogs__container">
         <h1>BLOGS</h1>
-        {data
-          ? data.map((blog) => (
-              <Blog
-                key={blog._id}
-                id={blog._id}
-                type={blog.category}
-                head={blog.title}
-                content={blog.desc}
-                img={`${process.env.REACT_APP_URL}${blog.image}`}
-                date={blog.time}
-              />
-            ))
-          : null}
+        {data ? (
+          data.map((blog) => (
+            <Blog
+              key={blog._id}
+              id={blog._id}
+              type={blog.category}
+              head={blog.title}
+              content={blog.desc}
+              img={blog.image}
+              date={blog.time}
+            />
+          ))
+        ) : (
+          <Spinner />
+        )}
         <div className="Blogs__container_read_container">
           <form action="/blogs" method="GET">
             <button type="submit" className="Blogs__container_read">

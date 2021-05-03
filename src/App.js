@@ -15,11 +15,15 @@ import Helmet from 'react-helmet';
 import ReactGA from 'react-ga';
 
 function App() {
-  ReactGA.initialize("Can't Show");
+  ReactGA.initialize('UA-154017579-2');
   ReactGA.pageview(window.location.pathname + window.location.search);
   const Blog = React.lazy(() => import('./Components/SeperateBlogs/Blog'));
   const ContactUs = React.lazy(() => import('./Components/ContactUs/Contact'));
   const BlogPage = React.lazy(() => import('./Components/BlogsPage/Blogs'));
+  const Privacy = React.lazy(() =>
+    import('./Components/PrivacyandTerms/Privacy')
+  );
+  const Terms = React.lazy(() => import('./Components/PrivacyandTerms/Terms'));
 
   return (
     <div className="App">
@@ -36,20 +40,18 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/allen-solly-complete-case-study-2020/">
-            <Redirect to="/blogs/5fe20dac844a010017e93e80" />
+            <Redirect to="/blogs/5ffe01cf5464660017fbd936" />
           </Route>
           <Route path="/blogs/:blogId">
             <Suspense fallback={<Spinner />}>
               <Header />
               <Blog />
-              <Newsletter white />
               <Footer />
             </Suspense>
           </Route>
           <Route path="/blogs">
             <Suspense fallback={<Spinner />}>
               <BlogPage />
-              <Newsletter white />
               <Footer />
             </Suspense>
           </Route>
@@ -57,6 +59,20 @@ function App() {
             <Suspense fallback={<Spinner />}>
               <Header />
               <ContactUs />
+              <Footer />
+            </Suspense>
+          </Route>
+          <Route path="/privacy">
+            <Suspense fallback={<Spinner />}>
+              <Header />
+              <Privacy />
+              <Footer />
+            </Suspense>
+          </Route>
+          <Route path="/terms">
+            <Suspense fallback={<Spinner />}>
+              <Header />
+              <Terms />
               <Footer />
             </Suspense>
           </Route>

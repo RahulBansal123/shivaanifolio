@@ -9,6 +9,7 @@ import Love from '../../assests/love.svg';
 import Message from '../../assests/message.svg';
 import Logo from '../../assests/logo.png';
 import Error from '../../assests/error.png';
+import Spinner from '../Spinner/Spinner';
 
 const Blog = () => {
   const [liked, setLiked] = useState(false);
@@ -65,17 +66,34 @@ const Blog = () => {
             <h1 className="Blog_heading">{data.title}</h1>
             <div className="Blog_content">
               <MyBlog
-                text={`<div class="blog__main_description">${data.desc}</div>`}
+                text={`<div class="blog__main_description">${data.desc
+                  .replaceAll(/id=\"[^\"]*\"/gi, '')
+                  .replaceAll(/style=\"[^\"]*\"/gi, '')
+                  .replaceAll(/dir=\"[^\"]\"/gi, '')
+                  .replaceAll(/<span >/gi, '')
+                  .replaceAll(/<\/span>/gi, '')
+                  .replaceAll(/<br>/gi, '')}</div>`}
               />
+
               <img
-                src={process.env.REACT_APP_URL + data.image}
+                src={data.image}
                 alt={data.title}
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = Error;
                 }}
               />
-              <MyBlog text={data.content} />
+              <MyBlog
+                text={data.content
+                  .replaceAll(/id=\"[^\"]*\"/gi, '')
+                  .replaceAll(/style=\"[^\"]*\"/gi, '')
+                  .replaceAll(/dir=\"[^\"]\"/gi, '')
+                  .replaceAll(/<span >/gi, '')
+                  .replaceAll(/<\/span>/gi, '')
+                  .replaceAll(/<h[4-6]/gi, '<h3')
+                  .replaceAll(/<\/h[4-6]/gi, '</h3')
+                  .replaceAll(/<br>/gi, '')}
+              />
               <hr />
               <div className="Blog_content_author_container">
                 By: Shivani Bansal
@@ -95,7 +113,9 @@ const Blog = () => {
             </div>
           </div>
         </React.Fragment>
-      ) : null}
+      ) : (
+        <Spinner />
+      )}
     </div>
   );
 };
