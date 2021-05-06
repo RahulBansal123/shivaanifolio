@@ -1,6 +1,6 @@
 {
   "name": "shivaanifolio",
-  "homepage": "https://www.shivaanibansal.in/",
+  "homepage": "https://rahulbansal123.github.io/shivaanifolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +24,9 @@
     "start": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build ",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
