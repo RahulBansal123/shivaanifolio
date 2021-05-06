@@ -13,4 +13,4 @@
   <li>React-Helmet</li>
 </ul>
 
-To view the project in action visit <a href='https://www.shivaanibansal.in/'/>https://www.shivaanibansal.in/</a>
+To view the project in action visit <a href='https://rahulbansal123.github.io/shivaanifolio/'/>https://rahulbansal123.github.io/shivaanifolio/</a>
