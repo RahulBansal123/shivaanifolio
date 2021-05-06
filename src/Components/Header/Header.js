@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div className={Class}>
       <h2 className="header__logo">
-        <a href="/">Shivaani Folio</a>
+        <a href="/shivaanifolio">Shivaani Folio</a>
       </h2>
       <div className="header__navbar">
         {/* <ul> */}

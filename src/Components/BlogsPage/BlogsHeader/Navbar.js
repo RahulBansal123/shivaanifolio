@@ -17,14 +17,14 @@ const NavBar = () => {
   return (
     <div className={Class}>
       <h2 className="header__logo">
-        <a href="/">Shivaani Folio Blogs</a>
+        <a href="/shivaanifolio">Shivaani Folio Blogs</a>
       </h2>
       <div className="header__navbar">
         <ul>
-          <a href="/">
+          <a href="/shivaanifolio">
             <li className="header__navitems">Home</li>
           </a>
-          <a href="/contact">
+          <a href="/shivaanifolio/contact">
             <li className="header__navitems">Contact</li>
           </a>
         </ul>
