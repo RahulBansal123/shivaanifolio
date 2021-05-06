@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet';
 
 import Like from '../../assests/like.svg';
 import Love from '../../assests/love.svg';
-import Message from '../../assests/message.svg';
 import Logo from '../../assests/logo.png';
 import Error from '../../assests/error.png';
 import Spinner from '../Spinner/Spinner';

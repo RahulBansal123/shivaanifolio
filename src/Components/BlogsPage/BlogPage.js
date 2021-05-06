@@ -7,6 +7,8 @@ const axios = require('axios');
 const Blogs = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
+    console.log('asas', process.env.REACT_APP_URL);
+
     axios
       .get(`${process.env.REACT_APP_URL}blogs/blog`)
       .then((res) => {

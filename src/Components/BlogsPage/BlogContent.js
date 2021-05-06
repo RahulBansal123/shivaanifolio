@@ -1,7 +1,6 @@
 import React from 'react';
 import './BlogContent.css';
 import time from '../../assests/time.svg';
-import comment from '../../assests/message.svg';
 const BlogContent = ({ id, type, head, content, date }) => {
   const redirect = () => {
     window.location = `/blogs/${id}`;

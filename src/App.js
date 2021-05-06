@@ -9,7 +9,7 @@ import Blogs from './Components/Blogs/Blogs';
 import Footer from './Components/Footer/Footer';
 import Audit from './Components/Audit/Audit';
 import Spinner from './Components/Spinner/Spinner';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Icons from './Components/Icons/Icons';
 import Helmet from 'react-helmet';
 import ReactGA from 'react-ga';
@@ -37,11 +37,11 @@ function App() {
       <div className="icons">
         <Icons />
       </div>
-      <BrowserRouter>
+      <BrowserRouter basename="/shivaanifolio">
         <Switch>
-          <Route path="/allen-solly-complete-case-study-2020/">
+          {/* <Route path="/allen-solly-complete-case-study-2020/">
             <Redirect to="/blogs/5ffe01cf5464660017fbd936" />
-          </Route>
+          </Route> */}
           <Route path="/blogs/:blogId">
             <Suspense fallback={<Spinner />}>
               <Header />
