@@ -9,7 +9,7 @@ import Blogs from './Components/Blogs/Blogs';
 import Footer from './Components/Footer/Footer';
 import Audit from './Components/Audit/Audit';
 import Spinner from './Components/Spinner/Spinner';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, HashRouter } from 'react-router-dom';
 import Icons from './Components/Icons/Icons';
 import Helmet from 'react-helmet';
 import ReactGA from 'react-ga';
@@ -38,7 +38,7 @@ function App() {
         <Icons />
       </div>
       <BrowserRouter basename="/shivaanifolio">
-        <Switch>
+        <HashRouter>
           {/* <Route path="/allen-solly-complete-case-study-2020/">
             <Redirect to="/blogs/5ffe01cf5464660017fbd936" />
           </Route> */}
@@ -86,7 +86,7 @@ function App() {
             <Footer />
             {/* <Questions /> */}
           </Route>
-        </Switch>
+        </HashRouter>
       </BrowserRouter>
       {/* <Body />
       <Footer /> */}
