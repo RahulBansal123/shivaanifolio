@@ -12,7 +12,6 @@
 /build
 
 # Ignore files related to API keys
-.env
 
 # misc
 .DS_Store

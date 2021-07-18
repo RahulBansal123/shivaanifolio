@@ -7,10 +7,10 @@ const Privacy = () => {
         <h1 className="Blog_heading">PRIVACY POLICY</h1>
         <div className="Blog_content">
           <p>
-            At https://www.shivaanibansal, accessible from&nbsp;
+            {/* At https://www.shivaanibansal, accessible from&nbsp;
             <a href="https://www.shivaanibansal.in/">
               https://www.shivaanibansal.in/
-            </a>
+            </a> */}
             , one of our main priorities is the privacy of our visitors. This
             Privacy Policy document contains types of information that are
             collected and recorded by https://www.shivaanibansal and how we use

@@ -7,17 +7,11 @@ const Footer = () => {
       <div className="Footer__left">Copyright &#169; 2021 | ShivaaniFolio</div>
       <div className="Footer__middle">
         <span
-          onClick={() =>
-            (window.location.href = 'https://www.shivaanibansal.in/privacy')
-          }
+          onClick={() => (window.location.href = '/shivaanifolio/#/privacy')}
         >
           Privacy Policy
         </span>{' '}
-        <span
-          onClick={() =>
-            (window.location.href = 'https://www.shivaanibansal.in/terms')
-          }
-        >
+        <span onClick={() => (window.location.href = '/shivaanifolio/#/terms')}>
           | Terms and Conditions
         </span>
       </div>

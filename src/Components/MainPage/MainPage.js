@@ -15,7 +15,7 @@ const MainPage = () => {
           name="description"
           content="Learn about Digital Marketing , Social Media Marketing , Marketing hacks , Website development and case studies on various brands."
         />
-        <link rel="canonical" href="https://www.shivaanibansal.in/" />
+        {/* <link rel="canonical" href="https://www.shivaanibansal.in/" /> */}
         <meta property="og:image" content={Logo} />
         <meta property="og:type" content="website" />
         <meta
@@ -26,7 +26,7 @@ const MainPage = () => {
           property="og:description"
           content="Learn about Digital Marketing , Social Media Marketing , Marketing hacks , Website development and case studies on various brands."
         />
-        <meta property="og:url" content="https://www.shivaanibansal.in/" />
+        {/* <meta property="og:url" content="https://www.shivaanibansal.in/" /> */}
         <meta property="og:site_name" content="ShivaaiBansal.in" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -52,18 +52,18 @@ const MainPage = () => {
           </div>
           <div className="MainPage__top_left_button">
             <button
-              onClick={() => {
-                window.location.href =
-                  'https://tagmango.com/creator/shivaani-bansal';
-              }}
+            // onClick={() => {
+            //   window.location.href =
+            //     'https://tagmango.com/creator/shivaani-bansal';
+            // }}
             >
               Consultaion
             </button>
             <button
-              onClick={() => {
-                window.location.href =
-                  'https://www.facebook.com/shivaanibansal/services/?ref=page_internal';
-              }}
+            // onClick={() => {
+            //   window.location.href =
+            //     'https://www.facebook.com/shivaanibansal/services/?ref=page_internal';
+            // }}
             >
               Services
             </button>

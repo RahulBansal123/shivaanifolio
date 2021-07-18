@@ -33,17 +33,17 @@ const Blog = () => {
           <Helmet>
             <title>{data.title}</title>
             <meta name="description" content={data.desc} />
-            <link
+            {/* <link
               rel="canonical"
               href={'https://www.shivaanibansal.in/' + id}
-            />
+            /> */}
             <meta property="og:type" content="article" />
             <meta property="og:title" content={data.title} />
             <meta property="og:description" content={data.desc} />
-            <meta
+            {/* <meta
               property="og:url"
               content={'https://www.shivaanibansal.in/' + id}
-            />
+            /> */}
             <meta property="og:site_name" content="SHIVANI  FOLIO" />
 
             {data.hashtags.split(' ').map((tag) => {

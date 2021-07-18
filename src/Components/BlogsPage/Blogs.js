@@ -17,7 +17,6 @@ const Blogs = () => {
           name="description"
           content="Learn about Digital Marketing , Social Media Marketing , Marketing hacks , Website development and case studies on various brands."
         />
-        <link rel="canonical" href="https://www.shivaanibansal.in/blogs" />
         <meta property="og:type" content="blog" />
         <meta
           property="og:title"
@@ -28,13 +27,12 @@ const Blogs = () => {
           property="og:description"
           content="Learn about Digital Marketing , Social Media Marketing , Marketing hacks , Website development and case studies on various brands."
         />
-        <meta property="og:url" content="https://www.shivaanibansal.in/blogs" />
         <meta property="og:site_name" content="ShivaaiBansal.in" />
         <meta property="og:image" content={Logo} />
-        <meta
+        {/* <meta
           property="og:image:secure_url"
           content="https://www.shivaanibansal.in/blogs"
-        />
+        /> */}
         <meta property="og:image:width" content="1080" />
         <meta property="og:image:height" content="1080" />
 

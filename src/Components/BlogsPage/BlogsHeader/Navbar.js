@@ -24,7 +24,7 @@ const NavBar = () => {
           <a href="/shivaanifolio">
             <li className="header__navitems">Home</li>
           </a>
-          <a href="/shivaanifolio/contact">
+          <a href="/shivaanifolio/#/contact">
             <li className="header__navitems">Contact</li>
           </a>
         </ul>

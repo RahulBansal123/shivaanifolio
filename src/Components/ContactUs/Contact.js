@@ -55,17 +55,17 @@ const Contact = (props) => {
           name="description"
           content="Any query or suggestions are most welcome , feel free to share your thoughts."
         />
-        <link rel="canonical" href="https://www.shivaanibansal.in/contact" />
+        {/* <link rel="canonical" href="https://www.shivaanibansal.in/contact" /> */}
         <meta property="og:type" content="Contact us " />
         <meta property="og:title" content="CONTACT US - SHIVANI FOLIO" />
         <meta
           property="og:description"
           content="Any query or suggestions are most welcome , feel free to share your thoughts."
         />
-        <meta
+        {/* <meta
           property="og:url"
           content="https://www.shivaanibansal.in/contact/"
-        />
+        /> */}
         <meta property="og:image" content={Logo} />
 
         <meta property="og:site_name" content="ShivaaiBansal.in" />
@@ -76,12 +76,12 @@ const Contact = (props) => {
           content="Any query or suggestions are most welcome , feel free to share your thoughts."
         />
         <meta name="twitter:title" content="CONTACT US - SHIVANI FOLIO" />
-        <link
+        {/* <link
           rel="alternate"
           type="application/rss+xml"
           title="SHIVAANI  FOLIO &raquo; Blogs"
           href="https://www.shivaanibansal.in/blogs/"
-        />
+        /> */}
       </Helmet>
       <div className="Contact__left">
         <h1>Let's create progress together!</h1>
