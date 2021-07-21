@@ -3,7 +3,7 @@ import './BlogContent.css';
 import time from '../../assests/time.svg';
 const BlogContent = ({ id, type, head, content, date }) => {
   const redirect = () => {
-    window.location = `/blogs/${id}`;
+    window.location = `/#/shivaanifolio/blogs/${id}`;
     return false;
   };
   return (

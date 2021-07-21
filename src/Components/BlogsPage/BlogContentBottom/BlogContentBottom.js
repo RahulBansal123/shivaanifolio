@@ -5,7 +5,7 @@ import Error from '../../../assests/error.png';
 
 const BlogContentBottom = ({ id, img, type, head, content, date }) => {
   const redirect = () => {
-    window.location = `/blogs/${id}`;
+    window.location = `/#/blogs/${id}`;
     return false;
   };
   return (

@@ -5,8 +5,7 @@ import Error from '../../assests/error.png';
 
 const Blog = ({ id, img, type, head, content, date }) => {
   const redirect = () => {
-    window.location = `/blogs/${id}`;
-    return false;
+    return (window.location = `/#/shivaanifolio/blogs/${id}`);
   };
   return (
     <>

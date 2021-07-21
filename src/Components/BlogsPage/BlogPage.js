@@ -17,7 +17,7 @@ const Blogs = () => {
       .catch();
   }, []);
   const redirect = (id) => {
-    window.location = `/blogs/${id}`;
+    window.location = `/#/shivaanifolio/blogs/${id}`;
     return false;
   };
   return (

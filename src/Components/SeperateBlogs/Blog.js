@@ -13,9 +13,8 @@ import Spinner from '../Spinner/Spinner';
 const Blog = () => {
   const [liked, setLiked] = useState(false);
   const [data, setData] = useState(null);
-  const id = window.location.pathname.split('/blogs/')[1];
   useEffect(() => {
-    const id = window.location.pathname.split('/blogs/')[1];
+    const id = window.location.hash.split('/blogs/')[1];
     axios
       .get(`${process.env.REACT_APP_URL}blogs/${id}`)
       .then((res) => {

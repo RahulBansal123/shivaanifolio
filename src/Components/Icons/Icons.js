@@ -52,7 +52,7 @@ const Icons = () => {
         </object>
       </a>
       <a
-        href="https://www.linkedin.com/in/shivaani-bansal-6a2035143/"
+        href="https://www.linkedin.com/in/rahul-bansal-66a9581a6/"
         target="_blank"
         rel="noreferrer"
         className="Footer__icons_link"

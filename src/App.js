@@ -9,7 +9,7 @@ import Blogs from './Components/Blogs/Blogs';
 import Footer from './Components/Footer/Footer';
 import Audit from './Components/Audit/Audit';
 import Spinner from './Components/Spinner/Spinner';
-import { BrowserRouter, Route, HashRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import Icons from './Components/Icons/Icons';
 import Helmet from 'react-helmet';
 import ReactGA from 'react-ga';
@@ -37,57 +37,56 @@ function App() {
       <div className="icons">
         <Icons />
       </div>
-      <BrowserRouter basename="/shivaanifolio">
-        <HashRouter>
-          {/* <Route path="/allen-solly-complete-case-study-2020/">
+
+      <HashRouter basename="/shivaanifolio">
+        {/* <Route path="/allen-solly-complete-case-study-2020/">
             <Redirect to="/blogs/5ffe01cf5464660017fbd936" />
           </Route> */}
-          <Route path="/blogs/:blogId">
-            <Suspense fallback={<Spinner />}>
-              <Header />
-              <Blog />
-              <Footer />
-            </Suspense>
-          </Route>
-          <Route path="/blogs">
-            <Suspense fallback={<Spinner />}>
-              <BlogPage />
-              <Footer />
-            </Suspense>
-          </Route>
-          <Route path="/contact">
-            <Suspense fallback={<Spinner />}>
-              <Header />
-              <ContactUs />
-              <Footer />
-            </Suspense>
-          </Route>
-          <Route path="/privacy">
-            <Suspense fallback={<Spinner />}>
-              <Header />
-              <Privacy />
-              <Footer />
-            </Suspense>
-          </Route>
-          <Route path="/terms">
-            <Suspense fallback={<Spinner />}>
-              <Header />
-              <Terms />
-              <Footer />
-            </Suspense>
-          </Route>
-          <Route exact path="/">
+        <Route exact path="/blogs/:blogId">
+          <Suspense fallback={<Spinner />}>
             <Header />
-            <MainPage />
-            <Blogs />
-            <Audit />
-            <Services />
-            <Newsletter />
+            <Blog />
             <Footer />
-            {/* <Questions /> */}
-          </Route>
-        </HashRouter>
-      </BrowserRouter>
+          </Suspense>
+        </Route>
+        <Route exact path="/blogs">
+          <Suspense fallback={<Spinner />}>
+            <BlogPage />
+            <Footer />
+          </Suspense>
+        </Route>
+        <Route path="/contact">
+          <Suspense fallback={<Spinner />}>
+            <Header />
+            <ContactUs />
+            <Footer />
+          </Suspense>
+        </Route>
+        <Route path="/privacy">
+          <Suspense fallback={<Spinner />}>
+            <Header />
+            <Privacy />
+            <Footer />
+          </Suspense>
+        </Route>
+        <Route path="/terms">
+          <Suspense fallback={<Spinner />}>
+            <Header />
+            <Terms />
+            <Footer />
+          </Suspense>
+        </Route>
+        <Route exact path="/">
+          <Header />
+          <MainPage />
+          <Blogs />
+          <Audit />
+          <Services />
+          <Newsletter />
+          <Footer />
+          {/* <Questions /> */}
+        </Route>
+      </HashRouter>
       {/* <Body />
       <Footer /> */}
     </div>
